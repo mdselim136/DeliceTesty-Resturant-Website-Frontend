@@ -1,0 +1,28 @@
+.littleabout_maindiv {
+  padding: 5rem 0;
+}
+.littleabout_title {
+  text-align: center;
+  font-weight: 800;
+  color: #4b4741;
+}
+.littleabout_para {
+  text-align: center;
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: #777777;
+  padding: 1.5rem 0 1rem 0;
+}
+.bar_div_main {
+  position: relative;
+}
+
+.bar_div_inner::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.5rem;
+  height: 0.2rem;
+  background: #f9c56a;
+}
