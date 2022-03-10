@@ -1,0 +1,31 @@
+.nav_bar_logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.9rem;
+  color: #363636 !important;
+}
+.nav_bar_logo span {
+  color: #ff9801;
+}
+.nav_bar_link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600 !important;
+  font-size: 1.1rem;
+  color: #000404;
+  transition: 0.4s;
+}
+.nav_bar_link:hover {
+  color: #ff9801;
+}
+.button_login {
+  background: #ff9801;
+  font-weight: 800 !important;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.button_login:hover {
+  color: #000404;
+}
