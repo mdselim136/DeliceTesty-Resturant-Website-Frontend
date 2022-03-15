@@ -16,8 +16,8 @@
 .carousel-caption {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  transform: translateX(-50%);
   color: #fff;
   text-align: center;
   z-index: 99;
@@ -38,4 +38,20 @@
 
 .carousel-indicators [data-bs-target] {
   display: none;
+}
+
+.see_menu_btn {
+  text-decoration: none;
+  background-color: #ff9801;
+  color: #fff;
+  display: inline-block;
+  padding: 13px 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.see_menu_btn:hover {
+  color: #363636;
 }

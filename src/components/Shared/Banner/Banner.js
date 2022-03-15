@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import BannerOne from "../image/banner-1.jpg";
 import BannerTwo from "../image/banner-2.jpg";
 import BannerThree from "../image/banner-3.jpg";
@@ -19,6 +20,9 @@ const Banner = () => {
               Customar Satisficed is ourt first priority. We are not only testy
               and we are also very careful to our customer.
             </p>
+            <Link className="see_menu_btn" to="/menu">
+              See Our Menu
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carousel_item_style">
@@ -31,6 +35,9 @@ const Banner = () => {
               Customar Satisficed is ourt first priority. We are not only testy
               and we are also very careful to our customer.
             </p>
+            <Link className="see_menu_btn" to="/menu">
+              See Our Menu
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carousel_item_style">
@@ -43,6 +50,9 @@ const Banner = () => {
               Customar Satisficed is ourt first priority. We are not only testy
               and we are also very careful to our customer.
             </p>
+            <Link className="see_menu_btn" to="/menu">
+              See Our Menu
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
