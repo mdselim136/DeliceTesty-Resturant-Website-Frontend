@@ -63,6 +63,12 @@ const LittleAbout = () => {
                   We have online booking system for your occasion , ceremony ,
                   we give you home delivery system in our resturant near place .
                 </p>
+                <p>
+                  We give you catering service or whole monthly basis food
+                  delivery service . If you need this type of delivery firstly
+                  you have to contact our manager. He give you permission for
+                  this We will give you food.
+                </p>
               </div>
             </Col>
           </Row>

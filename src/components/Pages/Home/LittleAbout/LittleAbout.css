@@ -29,9 +29,11 @@
 
 .litt-full-img {
   height: 200px;
+  border-radius: 8px;
 }
 .litt-half-img {
   height: 200px;
+  border-radius: 8px;
 }
 .little-gallery p {
   color: #828281;
