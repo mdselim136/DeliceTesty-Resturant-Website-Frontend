@@ -1,11 +1,14 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import "./Menu.css";
 
 const Menu = () => {
   return (
     <div className="menu_maindiv">
       <Container>
-        <h1 className="littleabout_title">OUR MENUS</h1>
+        <h1 style={{ color: "#ffffff" }} className="littleabout_title">
+          OUR MENUS
+        </h1>
         <h4 className="littleabout_para">
           Our Food Always Delicious And Healthy
         </h4>
