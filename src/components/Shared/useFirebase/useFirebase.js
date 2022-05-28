@@ -1,4 +1,9 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  GithubAuthProvider,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
 import { useState } from "react";
 import initializeAuthentication from "../Firebase/Firebase.initialize";
 
@@ -9,6 +14,7 @@ const useFirebase = () => {
   const auth = getAuth();
 
   const googleAuthProvider = new GoogleAuthProvider();
+  const githubAuthProvider = new GithubAuthProvider();
 
   const signInWithGoogle = () => {
     signInWithPopup(auth, googleAuthProvider)
@@ -21,7 +27,15 @@ const useFirebase = () => {
       });
   };
 
-  return { signInWithGoogle, user };
+  const signInWithGithub = () => {
+    signInWithPopup(auth, githubAuthProvider).then((result) => {
+      const res = result.user;
+      setUser(res);
+      console.log(result.user);
+    });
+  };
+
+  return { signInWithGoogle, user, signInWithGithub };
 };
 
 export default useFirebase;

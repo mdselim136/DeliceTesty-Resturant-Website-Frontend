@@ -1,0 +1,32 @@
+.login_form_upper {
+    margin-top: 135px;
+    position: relative;
+}
+
+.login_form_inner{
+    position: absolute;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.3);
+    padding: 50px 40px;
+    border-radius: 20px;
+}
+.login_submit_button {
+    border: none;
+    padding: 13px;
+    width: 100%;
+    background: #FF9801;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.auth_inner {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #eee;
+    border-radius: 50%;
+}
