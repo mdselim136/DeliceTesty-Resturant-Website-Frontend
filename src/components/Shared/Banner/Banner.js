@@ -15,7 +15,7 @@ const Banner = () => {
           <img className="d-block w-100" src={BannerOne} alt="First slide" />
           <Carousel.Caption>
             <img src={BannerLogo} alt="" />
-            <h1>We are DeliceTesty</h1>
+            <h1>We are FoodTesty</h1>
             <p>
               Customar Satisficed is ourt first priority. We are not only testy
               and we are also very careful to our customer.

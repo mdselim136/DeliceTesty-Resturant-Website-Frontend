@@ -9,7 +9,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand>
           <Link className="nav_bar_logo" to="/">
-            Delice<span>Testy</span>
+            Food<span>Testy</span>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

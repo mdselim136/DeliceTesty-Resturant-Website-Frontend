@@ -7,11 +7,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
-  const { signInWithGoogle } = useFirebase();
-
-  const googleSign = () => {
-    signInWithGoogle();
-  };
+  const { signInWithGoogle, signInWithGithub } = useFirebase();
 
   return (
     <div className="login_form_upper">
@@ -61,7 +57,7 @@ const Login = () => {
               <img
                 width={50}
                 src={GoogleImage}
-                onClick={googleSign}
+                onClick={signInWithGoogle}
                 alt="google-icon"
               />
             </div>
@@ -69,7 +65,7 @@ const Login = () => {
               <img
                 width={50}
                 src={GithubImage}
-                onClick={googleSign}
+                onClick={signInWithGithub}
                 alt="google-icon"
               />
             </div>

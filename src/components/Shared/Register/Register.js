@@ -6,11 +6,11 @@ import GoogleImage from "../image/search.png";
 import GithubImage from "../image/github.png";
 
 const Register = () => {
-  const { signInWithGoogle } = useFirebase();
+  const { signInWithGoogle, signInWithGithub } = useFirebase();
 
-  const googleSign = () => {
-    signInWithGoogle();
-  };
+  // const googleSign = () => {
+  //   signInWithGoogle();
+  // };
 
   return (
     <div className="login_form_upper">
@@ -72,7 +72,7 @@ const Register = () => {
               <img
                 width={50}
                 src={GoogleImage}
-                onClick={googleSign}
+                onClick={signInWithGoogle}
                 alt="google-icon"
               />
             </div>
@@ -80,7 +80,7 @@ const Register = () => {
               <img
                 width={50}
                 src={GithubImage}
-                onClick={googleSign}
+                onClick={signInWithGithub}
                 alt="google-icon"
               />
             </div>
