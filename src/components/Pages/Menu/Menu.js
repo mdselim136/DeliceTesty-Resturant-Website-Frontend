@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./Menu.css";
+import MenuSingle from "./MenuSingle/MenuSingle";
 
 const Menu = () => {
   const [food, setFood] = useState([]);
@@ -28,11 +29,13 @@ const Menu = () => {
         <div className="bar_div_main mb-5">
           <div className="bar_div_inner"></div>
         </div>
-        <Row>
-          <Col md={4}>
-            <div className="main"></div>
-          </Col>
-        </Row>
+        <div className="pt-5">
+          <Row>
+            {food.slice(4, 10).map((foodData) => (
+              <MenuSingle data={foodData} key={foodData.foodname} />
+            ))}
+          </Row>
+        </div>
       </Container>
     </div>
   );
