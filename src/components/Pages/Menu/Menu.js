@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import Content from "../../Shared/Content/Content";
 import "./Menu.css";
 import MenuSingle from "./MenuSingle/MenuSingle";
 
 const Menu = () => {
-  const [food, setFood] = useState([]);
-
-  useEffect(() => {
-    fetch("/allfood.json")
-      .then((res) => res.json())
-      .then((data) => setFood(data))
-      .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
-
-  console.log(food);
+  const { food } = Content();
 
   return (
     <div className="menu_maindiv">

@@ -24,6 +24,7 @@ const Login = () => {
                 type="email"
                 className="input_box_log"
                 placeholder="enter your email"
+                autoComplete="username"
                 required
               />
             </FloatingLabel>
@@ -35,6 +36,7 @@ const Login = () => {
               <Form.Control
                 type="password"
                 placeholder="enter your password"
+                autoComplete="current-password"
                 required
               />
             </FloatingLabel>

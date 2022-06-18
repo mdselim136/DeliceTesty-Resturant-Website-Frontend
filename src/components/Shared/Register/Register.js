@@ -27,6 +27,7 @@ const Register = () => {
                 type="text"
                 className="input_box_log"
                 placeholder="enter your fullname"
+                autoComplete="username"
                 required
               />
             </FloatingLabel>
@@ -39,6 +40,7 @@ const Register = () => {
                 type="email"
                 className="input_box_log"
                 placeholder="enter your email"
+                autoComplete="username"
                 required
               />
             </FloatingLabel>
@@ -50,6 +52,7 @@ const Register = () => {
               <Form.Control
                 type="password"
                 placeholder="enter your password"
+                autoComplete="current-password"
                 required
               />
             </FloatingLabel>

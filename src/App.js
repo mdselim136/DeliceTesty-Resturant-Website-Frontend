@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/Pages/About/About";
 import Blog from "./components/Pages/Blog/Blog";
 import Contact from "./components/Pages/Contact/Contact";
+import FoodSingle from "./components/Pages/FoodSingle/FoodSingle";
 import Home from "./components/Pages/Home/Home";
 import MainFoodMenu from "./components/Pages/MainFoodMenu/MainFoodMenu";
 import Header from "./components/Shared/Header/Header";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<MainFoodMenu />} />
+          <Route path="menu/:menuItem" element={<FoodSingle />} />
           <Route path="/aboutus" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
