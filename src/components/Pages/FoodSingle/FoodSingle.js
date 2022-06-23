@@ -23,16 +23,18 @@ const FoodSingle = () => {
   const plusCart = (price) => {
     const addPro = 1;
     setCart(cart + addPro);
-    const product = price * cart;
-    setTotalPrice(product);
+    console.log(cart);
+    const productPrice = price * (cart + 1);
+    setTotalPrice(productPrice);
   };
 
   const minusCart = (price) => {
-    if (cart === 0) {
+    if (cart <= 0) {
       return;
     }
-    setCart(cart - 1);
-    const product = price * cart;
+    const cutPro = 1;
+    setCart(cart - cutPro);
+    const product = price * (cart - 1);
     setTotalPrice(product);
   };
 
@@ -41,15 +43,17 @@ const FoodSingle = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <div className="p-5 shadow-lg rounded">
+            <div className="p-5 shadow-lg rounded left-food-site">
               <img
                 src={foodSingle?.image}
-                className="img-fluid"
+                className="img-fluid rounded"
                 alt="foodImage"
               />
-              <h2 className="text-capitalize pt-3">{foodSingle?.foodname}</h2>
-              <h4>Price : {foodSingle?.price} $</h4>
-              <h5 className="text-capitalize">
+              <h2 className="text-capitalize pt-3 text-white">
+                {foodSingle?.foodname}
+              </h2>
+              <h4 className="text-white">Price : {foodSingle?.price} $</h4>
+              <h5 className="text-capitalize text-white">
                 Category : {foodSingle?.category}
               </h5>
             </div>
@@ -71,8 +75,13 @@ const FoodSingle = () => {
                   +
                 </button>
               </div>
+
               <div>
-                <h3 className="mt-5">Total Price : {totalPrice}</h3>
+                <h3 className="mt-5">Total Price : {totalPrice} $</h3>
+                <div className="coupon-code">
+                  <input type="text" />
+                  <button>apply</button>
+                </div>
                 <button type="submit" className="item_button border-0 mt-5">
                   Submit Order
                 </button>

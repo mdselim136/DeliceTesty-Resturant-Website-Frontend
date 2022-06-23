@@ -24,8 +24,8 @@ const Header = () => {
             <Link className="nav_bar_link" to="/aboutus">
               About Us
             </Link>
-            <Link className="nav_bar_link" to="/blog">
-              Blog
+            <Link className="nav_bar_link" to="/reviews">
+              Reviews
             </Link>
             <Link className="nav_bar_link" to="/contact">
               Contact
