@@ -46,6 +46,7 @@ const FoodSingle = () => {
             <div className="p-5 shadow-lg rounded left-food-site">
               <img
                 src={foodSingle?.image}
+                height="400px"
                 className="img-fluid rounded"
                 alt="foodImage"
               />

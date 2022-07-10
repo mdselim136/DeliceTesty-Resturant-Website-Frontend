@@ -1,11 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import DatePicker from "react-datepicker";
+import "./Reservation.css";
 
 const Reservation = () => {
-  const [startdate, setStartDate] = useState(new Date());
-
   return (
     <>
       <div className="reservation-main py-5">
@@ -23,10 +20,7 @@ const Reservation = () => {
             <form action="#">
               <Row>
                 <Col md={4}>
-                  <DatePicker
-                    selected={startdate}
-                    onChange={(date) => setStartDate(date)}
-                  />
+                  <input type="date" />
                 </Col>
               </Row>
             </form>
