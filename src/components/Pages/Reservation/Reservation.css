@@ -6,4 +6,6 @@
 ::-webkit-datetime-edit-year-field { color: purple; }
 ::-webkit-inner-spin-button { display: none; }
 ::-webkit-calendar-picker-indicator { background: orange; }
-
+#datepicker{
+    background: #F3F1ED;
+}

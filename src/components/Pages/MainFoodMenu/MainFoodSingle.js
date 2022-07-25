@@ -3,10 +3,12 @@ import { Button, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const MainFoodSingle = ({ data }) => {
+  const menuImage = { height: "400px" };
+
   return (
     <Col md={4} className="mb-5">
       <Card>
-        <Card.Img variant="top" height={400} src={data.image} />
+        <Card.Img variant="top" style={menuImage} src={data.image} />
         <Card.Body>
           <Card.Title className="text-uppercase">{data.foodname}</Card.Title>
           <Card.Text className="fw-bold fs-4">{data.price} $</Card.Text>
