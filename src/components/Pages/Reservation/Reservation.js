@@ -30,7 +30,7 @@ const Reservation = () => {
           <div className="bar_div_main mb-5">
             <div className="bar_div_inner"></div>
           </div>
-          <div className="border p-5">
+          <div className="border p-5 rounded">
             <form onSubmit={handleSubmit(onSubmit)}>
               <Row className="py-5">
                 <Col md={4} className="mb-5">
@@ -117,6 +117,14 @@ const Reservation = () => {
                 </div>
               </Row>
             </form>
+          </div>
+          <div
+            className="text-center pt-4 pb-3"
+            style={{ background: "#FAFAFA" }}
+          >
+            <p className="fs-4">
+              You can also call : <b>+880555654665</b> to make a reservation.
+            </p>
           </div>
         </Container>
       </div>
