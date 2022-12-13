@@ -15,7 +15,16 @@ const Contact = () => {
         <div className="contact-main-div">
           <Row className="align-items-center">
             <Col lg={6}>
-              <h2 className="littleabout_title mb-5">address</h2>
+              <h2 className="littleabout_title mb-5">Address</h2>
+              <h3>
+                <b>Email:</b> mdselimdev@gmail.com
+              </h3>
+              <h3>
+                <b>Phone/Whatsapp :</b> +880193000000
+              </h3>
+              <h3>
+                <b>Address :</b> Mirpur Dosh , Dhaka - 1210.
+              </h3>
             </Col>
             <Col lg={6}>
               <h2 className="littleabout_title mb-5">Get in touch</h2>

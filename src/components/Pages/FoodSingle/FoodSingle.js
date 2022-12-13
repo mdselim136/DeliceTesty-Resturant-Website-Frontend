@@ -41,7 +41,7 @@ const FoodSingle = () => {
   return (
     <div className="py-5 mt-5">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={6}>
             <div className="p-5 shadow-lg rounded left-food-site">
               <img

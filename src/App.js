@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/Pages/About/About";
 import Contact from "./components/Pages/Contact/Contact";
 import FoodSingle from "./components/Pages/FoodSingle/FoodSingle";
+import Footer from "./components/Pages/Home/Footer/Footer";
 import Home from "./components/Pages/Home/Home";
 import MainFoodMenu from "./components/Pages/MainFoodMenu/MainFoodMenu";
 import Reviews from "./components/Pages/Reviews/Reviews";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signin" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
